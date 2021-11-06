@@ -55,7 +55,7 @@ public class AutoFarm extends AutoFarmingMachine {
 
     @Override
     public String getItemName() {
-        return "Auto Farm";
+        return "全自动农场";
     }
 
     @Override

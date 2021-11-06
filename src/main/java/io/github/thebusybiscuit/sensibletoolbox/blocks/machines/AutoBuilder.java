@@ -118,7 +118,7 @@ public class AutoBuilder extends BaseSTBMachine {
 
     @Override
     public String getItemName() {
-        return "建筑魔杖";
+        return "全自动建筑机";
     }
 
     @Override
@@ -610,11 +610,11 @@ public class AutoBuilder extends BaseSTBMachine {
         NO_WORKAREA(DyeColor.YELLOW, "你还没有确定建筑区域"),
         NO_INVENTORY(DyeColor.RED, "建筑材料已用完!", "请放入更多的方块", "然后按下开始键"),
         NO_PERMISSION(DyeColor.RED, "你没有此区域的建筑权限"),
-        TOO_NEAR(DyeColor.RED, "建筑魔杖正在工作!"),
-        TOO_FAR(DyeColor.RED, "建筑魔杖离建筑区域太远了,请走进" + MAX_DISTANCE + "格,到距离建筑区的边缘"),
+        TOO_NEAR(DyeColor.RED, "全自动建筑机正在工作!"),
+        TOO_FAR(DyeColor.RED, "全自动建筑机离建筑区域太远了,请走进" + MAX_DISTANCE + "格,到距离建筑区的边缘"),
         LM_WORLDS_DIFFERENT(DyeColor.RED, "此标记点来自不同的世界!"),
-        RUNNING(DyeColor.LIGHT_BLUE, "建筑魔杖正在运行,你可以按下开始按钮暂停"),
-        PAUSED(DyeColor.ORANGE, "建筑魔杖已暂停,你可以恢复他"),
+        RUNNING(DyeColor.LIGHT_BLUE, "全自动建筑机正在运行,你可以按下开始按钮暂停"),
+        PAUSED(DyeColor.ORANGE, "全自动建筑机已暂停,你可以恢复他"),
         FINISHED(DyeColor.WHITE, "建筑完成,可以准备下一次建筑");
 
 

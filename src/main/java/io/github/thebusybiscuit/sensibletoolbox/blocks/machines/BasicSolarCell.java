@@ -195,12 +195,12 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
 
     @Override
     public String getItemName() {
-        return "Basic Solar";
+        return "基础太阳能";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Generates up to " + getPowerOutput() + " SCU/t", "while outside in bright sunlight", UnicodeSymbol.ARROW_UP.toUnicode() + " + L-click block (empty hand): ", ChatColor.WHITE + "  - extract PV cell" };
+        return new String[] { "可生产" + getPowerOutput() + " SCU/t", "要在有阳光的地方进行发电", UnicodeSymbol.ARROW_UP.toUnicode() + " + L-click block (empty hand): ", ChatColor.WHITE + "  - extract PV cell" };
     }
 
     @Override
@@ -210,7 +210,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
         System.arraycopy(l, 0, l2, 0, l.length);
 
         if (pvCellLife == 0) {
-            l2[l.length] = ChatColor.GRAY.toString() + ChatColor.ITALIC + "No PV Cell installed";
+            l2[l.length] = ChatColor.GRAY.toString() + ChatColor.ITALIC + "你没有安装光伏电池";
         } else {
             l2[l.length] = PVCell.formatCellLife(pvCellLife);
         }
@@ -379,7 +379,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
     protected InventoryGUI createGUI() {
         InventoryGUI gui = super.createGUI();
 
-        gui.addLabel("PV Cell", 0, null, "Insert a PV Cell Here");
+        gui.addLabel("PV Cell", 0, null, "把光伏电池放在这里");
         gui.setSlotType(PV_CELL_SLOT, SlotType.ITEM);
 
         drawPVCell(gui);
@@ -406,13 +406,13 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
     @Override
     public ItemStack getLightMeterIndicator() {
         if (pvCellLife == 0) {
-            return GUIUtil.makeTexture(Material.BLACK_WOOL, ChatColor.WHITE + "No PV Cell inserted!", ChatColor.GRAY + "Insert a PV Cell in the top left");
+            return GUIUtil.makeTexture(Material.BLACK_WOOL, ChatColor.WHITE + "你没有安装光伏电池!", ChatColor.GRAY + "在左上角放入光伏电池");
         } else {
             DyeColor dc = colors[effectiveLightLevel];
             ChatColor cc = STBUtil.dyeColorToChatColor(dc);
             double mult = getChargeMultiplier(effectiveLightLevel);
 
-            return GUIUtil.makeTexture(ColoredMaterial.WOOL.get(dc.ordinal()), ChatColor.WHITE + "Efficiency: " + cc + (int) (getChargeMultiplier(effectiveLightLevel) * 100) + "%", ChatColor.GRAY + "Power Output: " + getPowerOutput() * mult + " SCU/t");
+            return GUIUtil.makeTexture(ColoredMaterial.WOOL.get(dc.ordinal()), ChatColor.WHITE + "效率: " + cc + (int) (getChargeMultiplier(effectiveLightLevel) * 100) + "%", ChatColor.GRAY + "Power Output: " + getPowerOutput() * mult + " SCU/t");
         }
     }
 

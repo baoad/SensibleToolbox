@@ -46,12 +46,12 @@ public class AutoForester extends AutoFarmingMachine {
 
     @Override
     public String getItemName() {
-        return "Auto Forester";
+        return "全自动种植机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Automatically harvests and replants", "Trees", "in a " + RADIUS + "x" + RADIUS + " Radius 2 Blocks above the Machine" };
+        return new String[] { "自动收获和重新种植", "树木", "耕作范围" + RADIUS + "x" + RADIUS + "格,机器上方两个方块内" };
     }
 
     @Override

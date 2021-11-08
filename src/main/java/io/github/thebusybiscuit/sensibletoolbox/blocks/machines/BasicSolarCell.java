@@ -195,12 +195,12 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
 
     @Override
     public String getItemName() {
-        return "基础太阳能";
+        return "简陋的太阳能发电机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "可生产" + getPowerOutput() + " SCU/t", "要在有阳光的地方进行发电", UnicodeSymbol.ARROW_UP.toUnicode() + " + L-click block (empty hand): ", ChatColor.WHITE + "  - extract PV cell" };
+        return new String[] { "可以产生" + getPowerOutput() + " SCU/帧的能量", "机器内需要放置 &6光伏电池 &7才能工作", UnicodeSymbol.ARROW_UP.toUnicode() + " + L-click block (empty hand): ", ChatColor.WHITE + "  - extract PV cell" };
     }
 
     @Override
@@ -210,7 +210,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
         System.arraycopy(l, 0, l2, 0, l.length);
 
         if (pvCellLife == 0) {
-            l2[l.length] = ChatColor.GRAY.toString() + ChatColor.ITALIC + "你没有安装光伏电池";
+            l2[l.length] = ChatColor.GRAY.toString() + ChatColor.ITALIC + "没有安装光伏电池";
         } else {
             l2[l.length] = PVCell.formatCellLife(pvCellLife);
         }

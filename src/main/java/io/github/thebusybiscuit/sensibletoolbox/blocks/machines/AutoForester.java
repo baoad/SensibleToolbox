@@ -46,12 +46,12 @@ public class AutoForester extends AutoFarmingMachine {
 
     @Override
     public String getItemName() {
-        return "全自动种植机";
+        return "量子伐木机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "自动收获和重新种植", "树木", "耕作范围" + RADIUS + "x" + RADIUS + "格,机器上方两个方块内" };
+        return new String[] { "&7可以自动种植的收割树木", "工作范围: &65 &7x &65", "&7工作条件: 放在低于树苗 &6一格 &7的地方", "也就是与土壤 &6平齐 &7地方" };
     }
 
     @Override

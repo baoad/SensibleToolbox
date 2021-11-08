@@ -200,7 +200,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
 
     @Override
     public String[] getLore() {
-        return new String[] { "可以产生" + getPowerOutput() + " SCU/帧的能量", "机器内需要放置 &6光伏电池 &7才能工作", UnicodeSymbol.ARROW_UP.toUnicode() + " + L-click block (empty hand): ", ChatColor.WHITE + "  - extract PV cell" };
+        return new String[] { "可以产生" + getPowerOutput() + " SCU/帧的能量", "机器内需要放置 §6光伏电池 §7才能工作" };
     }
 
     @Override

@@ -38,12 +38,12 @@ public class Fermenter extends AbstractIOMachine {
 
     @Override
     public String getItemName() {
-        return "Fermenter";
+        return "§d量子发酵器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Ferments various Item and is also", "used for the Creation of Fish Bait" };
+        return new String[] { "用世界的力量来发酵一些物品", "例如放入 §6腐肉 §7可以发酵为 §6鱼饵", "", "该设备的产物部分为 §6概率 §7输出" };
     }
 
     @Override

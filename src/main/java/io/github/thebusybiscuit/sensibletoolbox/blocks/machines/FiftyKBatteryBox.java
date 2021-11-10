@@ -22,9 +22,13 @@ public class FiftyKBatteryBox extends BatteryBox {
 
     @Override
     public String getItemName() {
-        return "50K Battery Box";
+        return "§e50K 电池组";
     }
 
+    @Override
+    public String[] getLore() {
+        return new String[] { "可以使用 §6铁栏杆 §7作为导线传输电力", "能源最大储存量: §6⚡ 50,000 §7SCU" };
+    }
     @Override
     public Recipe getRecipe() {
         ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());

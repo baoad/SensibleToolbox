@@ -87,12 +87,12 @@ public class ElectricalEnergizer extends AbstractIOMachine {
 
     @Override
     public String getItemName() {
-        return "Electrical Energizer";
+        return "§d电势激发器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Allows you to energize certain Items" };
+        return new String[] { "未来人类加工的设备", "通过强大的 §6磁场 §7来给某些物品励磁", "使得改物品的 §6电子 §7从无序的状态变为有序", "使得 §6平方 §7的物品可以储存点势能", "例如可以把 §6金锭 §7加工成 §6充电的金锭" };
     }
 
     @Override

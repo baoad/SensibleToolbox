@@ -195,18 +195,18 @@ public class BigStorageUnit extends AbstractProcessingMachine {
 
     @Override
     public String getItemName() {
-        return "BSU";
+        return "§d大型储存单元";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Big Storage Unit", "Stores up to " + getStackCapacity() + " stacks", "of a single item type" };
+        return new String[] { "最多可储存 §6" + getStackCapacity() + " §7个同类物品" };
     }
 
     @Override
     public String[] getExtraLore() {
         if (isLocked() && getStoredItemType() != null) {
-            return new String[] { ChatColor.WHITE + "Locked: " + ChatColor.YELLOW + ItemUtils.getItemName(getStoredItemType()) };
+            return new String[] { ChatColor.WHITE + "锁定状态: §c" + ItemUtils.getItemName(getStoredItemType()) };
         } else {
             return new String[0];
         }
@@ -223,7 +223,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
 
     @Override
     public String getCraftingNotes() {
-        return "Any type of log or slab may be used";
+        return "任何类型的木板与石块都可以使用";
     }
 
     @Override
@@ -320,7 +320,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
                 setStoredItemType(null);
             }
 
-            Debugger.getInstance().debug(2, this + " amount changed! " + oldTotalAmount + " -> " + getTotalAmount());
+            Debugger.getInstance().debug(2, this + " 个改动数量! " + oldTotalAmount + " -> " + getTotalAmount());
             getProgressMeter().setMaxProgress(maxCapacity);
             setProcessing(stored);
             setProgress(maxCapacity - (double) getStorageAmount());
@@ -464,7 +464,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
             player.setMetadata(STB_LAST_BSU_INSERT, new FixedMetadataValue(getProviderPlugin(), System.currentTimeMillis()));
             return toInsert;
         } else {
-            STBUtil.complain(player, getItemName() + " has insufficient charge to accept items.");
+            STBUtil.complain(player, getItemName() + " 物品不足,无法取出");
             return 0;
         }
     }
@@ -495,12 +495,12 @@ public class BigStorageUnit extends AbstractProcessingMachine {
     @Nonnull
     @Override
     public String getProgressMessage() {
-        return ChatColor.YELLOW + "In Storage: " + getStorageAmount() + "/" + maxCapacity;
+        return ChatColor.YELLOW + "储存数量: " + getStorageAmount() + "/" + maxCapacity;
     }
 
     @Override
     public String[] getProgressLore() {
-        return new String[] { "Total: " + (getStorageAmount() + getOutputAmount()) };
+        return new String[] { "总数: " + (getStorageAmount() + getOutputAmount()) };
     }
 
     @Override

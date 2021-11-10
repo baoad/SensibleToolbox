@@ -119,12 +119,12 @@ public class HeatEngine extends Generator {
 
     @Override
     public String getItemName() {
-        return "Heat Engine";
+        return "§d内能发电机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Converts burnable items to power" };
+        return new String[] { "将 §6可燃物 §7转换为能量的设备", "可以使用煤炭,木头,烈焰棒等 §6燃料 §7来发电" };
     }
 
     @Override
@@ -134,7 +134,7 @@ public class HeatEngine extends Generator {
         }
 
         if (!(upgrade instanceof RegulatorUpgrade)) {
-            STBUtil.complain(player, upgrade.getItemName() + " is not accepted by a " + getItemName());
+            STBUtil.complain(player, upgrade.getItemName() + " 不能使一个 " + getItemName());
             return false;
         }
 

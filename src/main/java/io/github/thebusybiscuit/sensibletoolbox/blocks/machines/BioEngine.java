@@ -148,12 +148,12 @@ public class BioEngine extends Generator {
 
     @Override
     public String getItemName() {
-        return "Bio Engine";
+        return "§d有机物发电机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Converts organic Materials into power", };
+        return new String[] { "将 §6有机物 §7转换为能量的设备", "可以使用小麦,胡萝卜,土豆等物品发电" };
     }
 
     @Override
@@ -161,7 +161,7 @@ public class BioEngine extends Generator {
         if (!super.isValidUpgrade(player, upgrade))
             return false;
         if (!(upgrade instanceof RegulatorUpgrade)) {
-            STBUtil.complain(player, upgrade.getItemName() + " is not accepted by a " + getItemName());
+            STBUtil.complain(player, upgrade.getItemName() + " 不会使他 " + getItemName());
             return false;
         }
         return true;

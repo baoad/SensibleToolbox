@@ -25,7 +25,7 @@ public class DenseSolar extends BasicSolarCell {
 
     @Override
     public String getItemName() {
-        return "Dense Solar";
+        return "§d太阳能矩阵发电机";
     }
 
     @Override

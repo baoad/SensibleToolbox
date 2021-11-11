@@ -63,12 +63,12 @@ public class Masher extends AbstractIOMachine {
 
     @Override
     public String getItemName() {
-        return "Masher";
+        return "§d量子洗矿机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Grinds ores and other ", "resources into dusts" };
+        return new String[] { "用于替代普通的 §6洗矿机 §7进行洗矿", "和普通的洗矿机拥有 §6相同 §7的产物输出概率", "可以把放入的 §6精矿 §7转换为其他矿物粉末", "可以产出: 铁粉,金粉,银粉,铝粉", "锌粉,铜粉,镁粉,铅粉,银粉" };
     }
 
     @Override

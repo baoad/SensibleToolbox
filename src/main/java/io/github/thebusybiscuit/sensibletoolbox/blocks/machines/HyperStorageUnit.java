@@ -108,7 +108,7 @@ public class HyperStorageUnit extends BigStorageUnit {
 
     @Override
     public String[] getLore() {
-        return new String[] { "Hyper Storage Unit", "Stores up to " + getStackCapacity() + " stacks", "of a single item type", "Keeps storage when broken", "Needs power to function" };
+        return new String[] { "§d量子储存单元", "最多可以储存 §6" + getStackCapacity() + " §7个同类物品", "但是需要 §6消耗能量 §7才能工作" };
     }
 
     @Override
@@ -116,7 +116,7 @@ public class HyperStorageUnit extends BigStorageUnit {
         if (getTotalAmount() > 0) {
             String[] l = super.getExtraLore();
             String[] l2 = Arrays.copyOf(l, l.length + 1);
-            l2[l2.length - 1] = ChatColor.WHITE + "Stored: " + ChatColor.YELLOW + getTotalAmount() + " " + ItemUtils.getItemName(getStoredItemType());
+            l2[l2.length - 1] = ChatColor.WHITE + "储存数量: " + ChatColor.YELLOW + getTotalAmount() + " " + ItemUtils.getItemName(getStoredItemType());
             return l2;
         } else {
             return super.getExtraLore();

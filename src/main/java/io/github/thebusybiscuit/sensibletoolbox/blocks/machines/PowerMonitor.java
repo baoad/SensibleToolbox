@@ -28,12 +28,12 @@ public class PowerMonitor extends BaseSTBBlock {
 
     @Override
     public String getItemName() {
-        return "Power Monitor";
+        return "§4能量监视器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Displays the Net Gain/Loss", "on attached Signs" };
+        return new String[] { "需要先把 §6告示牌 §7贴在该设备上才可以工作", "用于显示连接的 §6电网 §7的供电详情" };
     }
 
     @Override

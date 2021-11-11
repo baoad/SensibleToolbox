@@ -195,7 +195,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
 
     @Override
     public String getItemName() {
-        return "简陋的太阳能发电机";
+        return "§d简陋的太阳能发电机";
     }
 
     @Override

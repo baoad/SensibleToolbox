@@ -99,12 +99,12 @@ public class MagmaticEngine extends Generator {
 
     @Override
     public String getItemName() {
-        return "Magmatic Engine";
+        return "§d量子岩浆发电机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Converts Lava into power", };
+        return new String[] { "未来人类为了 §6星级殖民 §7开发的发电机", "这台设备可以 §6利用 §7域外行星", "几乎不枯竭的 §6岩浆 §7产生SCU能量", "配合 §6量子夸克泵 §7使用更为便利" };
     }
 
     @Override

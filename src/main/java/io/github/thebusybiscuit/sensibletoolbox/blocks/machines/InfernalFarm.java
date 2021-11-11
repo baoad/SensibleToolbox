@@ -37,12 +37,12 @@ public class InfernalFarm extends AutoFarm {
 
     @Override
     public String getItemName() {
-        return "Infernal Farm";
+        return "地狱农场机";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Automatically harvests and replants", "Nether Warts", "in a " + RADIUS + "x" + RADIUS + " Radius 2 Blocks above the Machine" };
+        return new String[] { "§7消耗 §cSCU §7量子能量自动耕作和收割", "§7仅限地狱疣", "§7工作范围: §65 §7x §65","§7工作条件: 放在低于作物 §6一格 §7的地方", "§7也就是与土壤 §6平齐 §7地方" };
     }
 
     @Override

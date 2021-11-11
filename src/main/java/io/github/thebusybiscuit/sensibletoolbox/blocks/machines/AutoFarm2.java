@@ -45,12 +45,12 @@ public class AutoFarm2 extends AutoFarm {
 
     @Override
     public String getItemName() {
-        return "量子耕作器";
+        return "§d量子耕作器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "§7消耗 §cSCU §7量子能量自动耕作和收割", "§7仅限小麦/胡萝卜/土豆", "§7工作范围: §67 §7x §67","§7工作条件: 放在低于农作物 §6一格 §7的地方", "也就是与土壤 §6平齐 §7地方" };
+        return new String[] { "§7消耗 §cSCU §7量子能量自动耕作和收割", "§7仅限小麦/胡萝卜/土豆", "§7工作范围: §67 §7x §67","§7工作条件: 放在低于作物 §6一格 §7的地方", "也就是与土壤 §6平齐 §7地方" };
     }
 
     @Override

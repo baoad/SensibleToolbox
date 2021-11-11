@@ -118,7 +118,7 @@ public class AutoBuilder extends BaseSTBMachine {
 
     @Override
     public String getItemName() {
-        return "全自动建筑机";
+        return "§d量子建筑机";
     }
 
     @Override

@@ -122,12 +122,12 @@ public class Pump extends AbstractProcessingMachine {
 
     @Override
     public String getItemName() {
-        return "Pump";
+        return "§d量子夸克泵";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Pumps liquids into a bucket" };
+        return new String[] { "可以 §6自动抽取 §7机器下方的液体装到桶里", "即便这些 §6液体 §7在地表深处", "在机器 §6下方一格 §7放置岩浆或者水", "从指定需要抽取的 §6液体 §7类型","从岩浆中吸取了 §6足够 §7的热能后", "岩浆有 §6概率 §7会 §6冷却 §7为黑曜石" };
     }
 
     @Override

@@ -78,7 +78,7 @@ public class SCURelay extends BatteryBox {
 
     @Override
     public String getItemName() {
-        return "SCU Relay";
+        return "§dSCU续电器";
     }
 
     @Override

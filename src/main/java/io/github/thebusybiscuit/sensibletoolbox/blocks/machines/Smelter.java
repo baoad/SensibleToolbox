@@ -88,12 +88,12 @@ public class Smelter extends AbstractIOMachine {
 
     @Override
     public String getItemName() {
-        return "Smelter";
+        return "§d量子烧制器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Smelts items", "Like a Furnace, but", "faster and more efficient" };
+        return new String[] { "像 §6熔炉 §7一样燃烧/烘焙物品", "但是更加只能,并且 §6速度 §7更快" };
     }
 
     @Override

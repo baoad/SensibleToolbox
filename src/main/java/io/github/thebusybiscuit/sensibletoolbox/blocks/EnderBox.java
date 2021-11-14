@@ -83,17 +83,17 @@ public class EnderBox extends BaseSTBBlock implements EnderTunable, STBInventory
 
     @Override
     public String getItemName() {
-        return "末影背包";
+        return "§d量子末影箱";
     }
 
     @Override
     public String getDisplaySuffix() {
-        return (isGlobal() ? "Global" : "Personal") + " " + UnicodeSymbol.NUMBER.toUnicode() + getEnderFrequency();
+        return (isGlobal() ? "公共" : "个人") + " " + UnicodeSymbol.NUMBER.toUnicode() + getEnderFrequency();
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Extra-dimensional storage", "Right-click with an", "Ender Tuner to set", "its frequency" };
+        return new String[] { "类似 §6末影箱 §7的移动储存器", "可以 §6储存 §7物品,并且拆下不会 §6丢失", "右键设备: 打开末影箱" };
     }
 
     @Override

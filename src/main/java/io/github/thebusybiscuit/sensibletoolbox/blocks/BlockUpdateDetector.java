@@ -74,17 +74,17 @@ public class BlockUpdateDetector extends BaseSTBBlock {
 
     @Override
     public String getItemName() {
-        return "§d量子区块加载器";
+        return "§d红石缓冲发生器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "可以 §6周期性 §7的加载区块", "可以 §6自定义 §7加载间隔和持续时间", "右键设备: §6配置加载器" };
+        return new String[] { "可以 §6周期性 §7的发生红石脉冲信号", "可以 §6自定义 §7脉冲间隔和持续时间", "右键设备: §6配置脉冲"};
     }
 
     @Override
     public String[] getExtraLore() {
-        return new String[] { "间隔: " + ChatColor.GOLD + getDuration() + "§7帧", "持续: " + ChatColor.GOLD + getQuiet() + "§7帧", };
+        return new String[] { "间隔: " + ChatColor.GOLD + getDuration() + "§7分", "持续: " + ChatColor.GOLD + getQuiet() + "§7粉", };
     }
 
     @Override

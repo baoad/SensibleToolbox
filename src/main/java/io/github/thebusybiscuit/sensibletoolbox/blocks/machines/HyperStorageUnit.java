@@ -31,7 +31,7 @@ public class HyperStorageUnit extends BigStorageUnit {
 
     @Override
     public String getItemName() {
-        return "HSU";
+        return "§d量子储存单元";
     }
 
     @Override
@@ -108,7 +108,7 @@ public class HyperStorageUnit extends BigStorageUnit {
 
     @Override
     public String[] getLore() {
-        return new String[] { "§d量子储存单元", "最多可以储存 §6" + getStackCapacity() + " §7个同类物品", "但是需要 §6消耗能量 §7才能工作" };
+        return new String[] { "最多可以储存 §6" + getStackCapacity() + " §7个同类物品", "但是需要 §6消耗能量 §7才能工作" };
     }
 
     @Override

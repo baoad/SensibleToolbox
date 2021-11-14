@@ -74,17 +74,17 @@ public class BlockUpdateDetector extends BaseSTBBlock {
 
     @Override
     public String getItemName() {
-        return "Block Update Detector";
+        return "§d量子区块加载器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Emits a redstone pulse when", " an adjacent block updates", "R-click block: " + ChatColor.WHITE + "configure BUD" };
+        return new String[] { "可以 §6周期性 §7的加载区块", "可以 §6自定义 §7加载间隔和持续时间", "右键设备: §6配置加载器" };
     }
 
     @Override
     public String[] getExtraLore() {
-        return new String[] { "Pulse duration: " + ChatColor.GOLD + getDuration() + " ticks", "Sleep time after pulse: " + ChatColor.GOLD + getQuiet() + " ticks", };
+        return new String[] { "间隔: " + ChatColor.GOLD + getDuration() + "§7帧", "持续: " + ChatColor.GOLD + getQuiet() + "§7帧", };
     }
 
     @Override
@@ -131,12 +131,12 @@ public class BlockUpdateDetector extends BaseSTBBlock {
     protected InventoryGUI createGUI() {
         InventoryGUI gui = GUIUtil.createGUI(this, 9, ChatColor.DARK_PURPLE + getItemName());
 
-        gui.addGadget(new NumericGadget(gui, 1, "Pulse Duration", new IntRange(1, Integer.MAX_VALUE), getDuration(), 10, 1, newValue -> {
+        gui.addGadget(new NumericGadget(gui, 1, "间隔", new IntRange(1, Integer.MAX_VALUE), getDuration(), 10, 1, newValue -> {
             setDuration(newValue);
             return true;
         }));
 
-        gui.addGadget(new NumericGadget(gui, 0, "Sleep Time after Pulse", new IntRange(0, Integer.MAX_VALUE), getQuiet(), 10, 1, newValue -> {
+        gui.addGadget(new NumericGadget(gui, 0, "持续", new IntRange(0, Integer.MAX_VALUE), getQuiet(), 10, 1, newValue -> {
             setQuiet(newValue);
             return true;
         }));

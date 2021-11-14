@@ -83,7 +83,7 @@ public class EnderBox extends BaseSTBBlock implements EnderTunable, STBInventory
 
     @Override
     public String getItemName() {
-        return "Ender Box";
+        return "末影背包";
     }
 
     @Override

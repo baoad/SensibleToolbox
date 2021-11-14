@@ -82,12 +82,12 @@ public class SoundMuffler extends BaseSTBBlock {
 
     @Override
     public String getItemName() {
-        return "Sound Muffler";
+        return "§c消音器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Reduces the volume of all sounds", "within a " + DISTANCE + "-block radius", "R-click: " + ChatColor.WHITE + " open configuration" };
+        return new String[] { "减少附近的声音音量", "例如 §6完全消除 §7生物的叫声", "工作距离: §6当前区块", "右键设备: §6进行设置" };
     }
 
     @Override

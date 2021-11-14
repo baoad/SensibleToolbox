@@ -45,7 +45,7 @@ public class RedstoneClock extends BaseSTBBlock {
     protected InventoryGUI createGUI() {
         InventoryGUI gui = GUIUtil.createGUI(this, 9, ChatColor.DARK_RED + getItemName());
 
-        gui.addGadget(new NumericGadget(gui, 0, "Pulse Interval", new IntRange(1, Integer.MAX_VALUE), getInterval(), 10, 1, newValue -> {
+        gui.addGadget(new NumericGadget(gui, 0, "脉冲频率", new IntRange(1, Integer.MAX_VALUE), getInterval(), 10, 1, newValue -> {
             if (newValue > getOnDuration()) {
                 setInterval(newValue);
                 return true;
@@ -54,7 +54,7 @@ public class RedstoneClock extends BaseSTBBlock {
             }
         }));
 
-        gui.addGadget(new NumericGadget(gui, 1, "Pulse Duration", new IntRange(1, Integer.MAX_VALUE), getOnDuration(), 10, 1, newValue -> {
+        gui.addGadget(new NumericGadget(gui, 1, "脉冲间隔", new IntRange(1, Integer.MAX_VALUE), getOnDuration(), 10, 1, newValue -> {
             if (newValue < getInterval()) {
                 setOnDuration(newValue);
                 return true;
@@ -102,12 +102,12 @@ public class RedstoneClock extends BaseSTBBlock {
 
     @Override
     public String getItemName() {
-        return "Redstone Clock";
+        return "§d红石脉冲发生器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Clock-in-a-block", "Emits a redstone signal with", "configurable interval & duration", "R-click block: " + ChatColor.WHITE + " configure clock" };
+        return new String[] { "可以 §6周期性 §7的发生红石脉冲信号", "可以 §6自定义 §7脉冲间隔和持续时间", "右键设备: §6配置脉冲" };
     }
 
     @Override
@@ -122,7 +122,7 @@ public class RedstoneClock extends BaseSTBBlock {
 
     @Override
     public String[] getExtraLore() {
-        String l = BaseSTBItem.LORE_COLOR + "Interval: " + ChatColor.GOLD + getInterval() + LORE_COLOR + "t, Duration: " + ChatColor.GOLD + getOnDuration() + LORE_COLOR + "t";
+        String l = BaseSTBItem.LORE_COLOR + "间隔: " + ChatColor.GOLD + getInterval() + LORE_COLOR + "帧, 持续: " + ChatColor.GOLD + getOnDuration() + LORE_COLOR + "帧";
         return new String[] { l };
     }
 

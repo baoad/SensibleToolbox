@@ -126,12 +126,12 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
 
     @Override
     public String getItemName() {
-        return "Paint Can";
+        return "§d染缸";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "R-click block with Paint Brush", " to refill the brush", "R-click block with anything else", " to open mixer; place milk bucket and", " a dye inside to mix some paint" };
+        return new String[] { "使用 §6刷子 §7右键染缸可以给 §6刷子 §7补充墨水", "直接右键 §6染缸 §7可以打开染色面板", "可以放入 §6牛奶 §7和 §6染料 §7混合颜色", "也可以给物品染色" };
     }
 
     @Override

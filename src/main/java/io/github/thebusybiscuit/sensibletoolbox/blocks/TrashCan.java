@@ -47,12 +47,12 @@ public class TrashCan extends BaseSTBBlock implements STBInventoryHolder {
 
     @Override
     public String getItemName() {
-        return "Trash Can";
+        return "§d物品垃圾桶";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "DESTROYS any items which are", "placed or piped into it.", "Beware!" };
+        return new String[] { "可以销毁 §6任何物品", "可以用 §6量子物品路由器 §7来输出", "请小心使用" };
     }
 
     @Override

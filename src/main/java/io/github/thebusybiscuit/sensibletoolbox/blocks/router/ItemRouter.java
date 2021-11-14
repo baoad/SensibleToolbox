@@ -131,12 +131,12 @@ public class ItemRouter extends BaseSTBBlock implements STBInventoryHolder {
 
     @Override
     public String getItemName() {
-        return "Item Router";
+        return "§d量子物品路由器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Routes items.  Insert one or", "more Routing Modules to activate.", "R-click block:" + ChatColor.WHITE + " configure router" };
+        return new String[] { "放置一个或者多个 §6路由模块 §7来激活本设备", "根据 §6路由模块 §7的不同,可以实现过滤等高级功能", "右键方块: §6配置路由器" };
     }
 
     @Override
@@ -216,7 +216,7 @@ public class ItemRouter extends BaseSTBBlock implements STBInventoryHolder {
     protected InventoryGUI createGUI() {
         InventoryGUI gui = GUIUtil.createGUI(this, 36, ChatColor.DARK_RED + getItemName());
 
-        gui.addLabel("Item Buffer", BUFFER_LABEL_SLOT, null, "Items can be extracted", "here, but not inserted.");
+        gui.addLabel("§b物品缓冲区", BUFFER_LABEL_SLOT, null, "物品可以从这里拿出,但无法放入!");
         gui.setSlotType(BUFFER_ITEM_SLOT, SlotType.ITEM);
         gui.setItem(BUFFER_ITEM_SLOT, getBufferItem());
 
@@ -227,7 +227,7 @@ public class ItemRouter extends BaseSTBBlock implements STBInventoryHolder {
             gui.setSlotType(slot, SlotType.ITEM);
         }
 
-        gui.addLabel("Item Router Modules", MODULE_LABEL_SLOT, null, "Insert one or more modules below", "When the router ticks, modules", "are executed in order, from left", "to right.");
+        gui.addLabel("§b量子物品路由器模块", MODULE_LABEL_SLOT, null, "在下面放置一个或者多个路由器模块", "当路由器运行的时候", "这里的路由器模块工作顺序是从左到右");
         int slot = MOD_SLOT_START;
 
         for (InstalledModule e : modules) {

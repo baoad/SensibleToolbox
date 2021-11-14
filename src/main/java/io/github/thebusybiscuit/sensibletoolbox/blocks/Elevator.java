@@ -54,12 +54,12 @@ public class Elevator extends BaseSTBBlock implements Colorable {
 
     @Override
     public String getItemName() {
-        return "Elevator";
+        return "§b微型电梯";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Links to other elevators", " directly above or below", "Press Space to go up", "Press Shift to go down" };
+        return new String[] { "在同一 §垂直方向 §6内 §6上下 §7放置微型电梯", "按下 §6跳跃 §7来上升,则 §6蹲下 §7为下降", };
     }
 
     @Override
@@ -73,7 +73,7 @@ public class Elevator extends BaseSTBBlock implements Colorable {
 
     @Nullable
     public Elevator findOtherElevator(@Nonnull BlockFace direction) {
-        Validate.isTrue(direction == BlockFace.UP || direction == BlockFace.DOWN, "direction must be UP or DOWN");
+        Validate.isTrue(direction == BlockFace.UP || direction == BlockFace.DOWN, "方向必须在同一垂直方向");
 
         Block b = getLocation().getBlock();
         Elevator res = null;

@@ -25,7 +25,7 @@ public class ToughMachineFrame extends BaseSTBItem {
 
     @Override
     public String[] getLore() {
-        return new String[] { "Used in fabrication of", "some more advanced machines." };
+        return new String[] { "用来制作一些高级的量子设备" };
     }
 
     @Override

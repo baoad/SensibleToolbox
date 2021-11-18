@@ -25,12 +25,12 @@ public class UnlinkedSCURelay extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Unlinked SCU Relay";
+        return "SCU续电连接器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Craft a pair of these", "together to link them" };
+        return new String[] { "制作两个用于连接SCU续电器" };
     }
 
     @Override

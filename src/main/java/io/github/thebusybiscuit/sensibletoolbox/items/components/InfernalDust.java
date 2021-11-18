@@ -19,12 +19,12 @@ public class InfernalDust extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Infernal Dust";
+        return "§7地狱灰尘";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Sometimes dropped from blazes.", "Looting enchantment may help.", "Combine this with iron or gold dust." };
+        return new String[] { "击杀 §6烈焰人 §7的时候有概率掉落", "掠夺附魔可以增加掉落概率" };
     }
 
     @Override

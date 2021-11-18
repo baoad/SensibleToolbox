@@ -23,12 +23,12 @@ public class EnergizedIronDust extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Energized Iron Dust";
+        return "§d充电的铁粉";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Smelt to get an energized iron ingot" };
+        return new String[] { "熔炼可以获得一个被充电的铁锭" };
     }
 
     @Override

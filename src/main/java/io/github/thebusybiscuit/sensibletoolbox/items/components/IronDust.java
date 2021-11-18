@@ -24,12 +24,12 @@ public class IronDust extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Iron Dust";
+        return "§7铁矿粉末";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Smelt in a Smelter or Furnace", " to get iron ingots" };
+        return new String[] { "在 §6量子烧制器 §7中可以制作成铁锭" };
     }
 
     @Override

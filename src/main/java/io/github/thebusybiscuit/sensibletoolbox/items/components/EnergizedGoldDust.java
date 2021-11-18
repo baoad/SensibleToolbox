@@ -21,12 +21,12 @@ public class EnergizedGoldDust extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Energized Gold Dust";
+        return "§d充电的金粉";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Smelt to get an energized gold ingot" };
+        return new String[] { "熔炼来获得一个被 §6充电 的金锭" };
     }
 
     @Override

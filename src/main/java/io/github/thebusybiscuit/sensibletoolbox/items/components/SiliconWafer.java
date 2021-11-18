@@ -19,12 +19,12 @@ public class SiliconWafer extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Silicon Wafer";
+        return "§b硅晶片";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Used in the fabrication", "of more advanced", "electronic circuits" };
+        return new String[] { "是制造 §6高级集成电路 §7的原材料" };
     }
 
     @Override

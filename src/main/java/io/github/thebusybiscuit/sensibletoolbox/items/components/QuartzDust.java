@@ -20,12 +20,12 @@ public class QuartzDust extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Quartz Dust";
+        return "§7石英粉末";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Cook in a Smelter to", "make silicon" };
+        return new String[] { "可以在 §6量子烧制器 §7中加工成硅" };
     }
 
     @Override

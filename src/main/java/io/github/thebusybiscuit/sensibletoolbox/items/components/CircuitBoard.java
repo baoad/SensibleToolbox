@@ -20,12 +20,12 @@ public class CircuitBoard extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Circuit Board";
+        return "§e电路主板";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Used in the construction", "of electronic circuits" };
+        return new String[] { "是制造其他 §6电子设备 §7的原材料" };
     }
 
     @Override

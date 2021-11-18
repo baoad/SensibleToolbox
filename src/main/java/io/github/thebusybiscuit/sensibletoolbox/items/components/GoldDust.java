@@ -24,12 +24,12 @@ public class GoldDust extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Gold Dust";
+        return "§e金矿粉末";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Smelt in a Smelter or Furnace", " to get gold ingots" };
+        return new String[] { "在 §6量子烧制器 §7中可以制作成金锭" };
     }
 
     @Override

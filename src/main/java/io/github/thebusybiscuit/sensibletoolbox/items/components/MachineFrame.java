@@ -20,12 +20,12 @@ public class MachineFrame extends BaseSTBItem {
 
     @Override
     public String getItemName() {
-        return "Machine Frame";
+        return "§d量子机械制造框架";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Used in fabrication of", "various machines." };
+        return new String[] { "是用来制作多个机器设备的原材料" };
     }
 
     @Override

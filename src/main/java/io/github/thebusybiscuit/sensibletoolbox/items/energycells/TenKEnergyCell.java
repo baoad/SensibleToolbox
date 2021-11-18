@@ -35,9 +35,14 @@ public class TenKEnergyCell extends EnergyCell {
 
     @Override
     public String getItemName() {
-        return "10K Energy Cell";
+        return "§e10K 能量电池";
     }
 
+     @Override
+    public String[] getLore() {
+        return new String[] { "用于储存 §6SCU能量 §7给物品/设备使用", "拿在手中 §6右键 §7可以给 §6快捷栏", "内的物品充电", "能源储量: §610,000 §7SCU" };
+    }
+    
     @Override
     public Recipe getRecipe() {
         ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());

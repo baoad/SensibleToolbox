@@ -56,17 +56,17 @@ public class AdvancedSenderModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Adv. Sender";
+        return "§d路由器模组: §b高级传送器: ";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Insert into an Item Router", "Sends items to a linked Receiver Module", " anywhere within a " + RANGE + "-block radius", " (line of sight is not needed)", "L-Click item router with installed", " Receiver Module: " + ChatColor.WHITE + " Link Adv. Sender", UnicodeSymbol.ARROW_UP.toUnicode() + " + L-Click: " + ChatColor.WHITE + " Unlink Adv. Sender" };
+        return new String[] { "§7请 §6配置后 §7放在 §6量子物品路由器 §7内使用", "用于 §6传送 §7所在路由器内 §6物品缓冲区", "的物品" ,"到链接的量子物品路由器当中", "工作范围: "+ ChatColor.GOLD + RANGE + "格", "", "左键: 在安装了 §6接收模块的量子物品路由器", "当中", "蹲下 + 左键: 量子物品路由器来 §6取消 §7链接" };
     }
 
     @Override
     public String getDisplaySuffix() {
-        return linkedLoc == null ? "[Not Linked]" : "[" + MiscUtil.formatLocation(linkedLoc) + "]";
+        return linkedLoc == null ? "§b[尚未连接]" : "§b[" + MiscUtil.formatLocation(linkedLoc) + "]";
     }
 
     @Override

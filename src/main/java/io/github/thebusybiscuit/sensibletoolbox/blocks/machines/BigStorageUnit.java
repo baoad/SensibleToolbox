@@ -200,7 +200,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
 
     @Override
     public String[] getLore() {
-        return new String[] { "最多可储存 §6" + getStackCapacity() + " §7个同类物品" };
+        return new String[] { "最多可储存 §6" + getStackCapacity() + " §7组同类物品" };
     }
 
     @Override

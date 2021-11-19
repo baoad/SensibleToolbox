@@ -59,7 +59,7 @@ public class Elevator extends BaseSTBBlock implements Colorable {
 
     @Override
     public String[] getLore() {
-        return new String[] { "在同一 §6垂直方向 §6内 §6上下 §7放置微型电梯", "按下 §6跳跃 §7来上升,则 §6蹲下 §7为下降", };
+        return new String[] { "在同一 §6垂直方向 §7内 §6上下 §7放置微型电梯", "按下 §6跳跃 §7来上升,则 §6蹲下 §7为下降", };
     }
 
     @Override

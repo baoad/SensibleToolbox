@@ -26,7 +26,7 @@ public class EnergizedGoldDust extends BaseSTBItem {
 
     @Override
     public String[] getLore() {
-        return new String[] { "熔炼来获得一个被 §6充电 的金锭" };
+        return new String[] { "熔炼来获得一个被 §6充电 §7的金锭" };
     }
 
     @Override

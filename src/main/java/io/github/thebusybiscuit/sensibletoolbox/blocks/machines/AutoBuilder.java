@@ -123,7 +123,7 @@ public class AutoBuilder extends BaseSTBMachine {
 
     @Override
     public String[] getLore() {
-        return new String[] { "可以建造或清理", "使用建筑魔杖右左键","分别点击长方形对角线来规划区域" };
+        return new String[] { "可以 §6建造 §7或 §6清理", "使用 §6建筑魔杖 §7右左键","分别点击长方形 §6对角线 §7来规划区域" };
     }
 
     @Override

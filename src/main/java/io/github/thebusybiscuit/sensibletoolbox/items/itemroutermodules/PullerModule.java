@@ -16,12 +16,12 @@ public class PullerModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Puller";
+        return "§d路由器模组: §d吸引器";
     }
 
     @Override
     public String[] getLore() {
-        return makeDirectionalLore("Insert into an Item Router", "Pulls items from an adjacent inventory");
+        return makeDirectionalLore("放在 §6量子物品路由器 §7内使用", "用来从相邻的容器内 §6抽取 §7物品", "到所在路由器的物品 §6缓冲区 §7内", "", "左键方块: §6设置方向", "蹲下 + 左键空气: §6删除方向");
     }
 
     @Override

@@ -106,7 +106,7 @@ public abstract class DirectionalItemRouterModule extends ItemRouterModule imple
             String[] lore = new String[(filter.size() + 1) / 2 + 2];
             String what = filter.isWhiteList() ? "white-listed" : "black-listed";
             String s = filter.size() == 1 ? "" : "s";
-            lore[0] = ChatColor.GOLD.toString() + filter.size() + " item" + s + " " + what;
+            lore[0] = ChatColor.GOLD.toString() + filter.size() + " 个物品" + s + " " + what;
 
             if (isTerminator()) {
                 lore[0] += ", " + ChatColor.BOLD + "Terminating";

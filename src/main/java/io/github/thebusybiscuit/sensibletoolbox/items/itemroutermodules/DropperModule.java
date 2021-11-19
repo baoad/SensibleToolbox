@@ -22,12 +22,12 @@ public class DropperModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Dropper";
+        return "§d路由器模组: §d投掷器";
     }
 
     @Override
     public String[] getLore() {
-        return makeDirectionalLore("Insert into an Item Router", "Drops items onto the ground", "in the configured direction");
+        return makeDirectionalLore("放在 §6量子物品路由器 §7内使用", "可以把路由器 §6缓冲区内 §7的物品", "向配置好的方向 §6投掷物品 §7在地上", "左键方块: §6设置方向", "蹲下 + 左键空气: §6删除方向");
     }
 
     @Override

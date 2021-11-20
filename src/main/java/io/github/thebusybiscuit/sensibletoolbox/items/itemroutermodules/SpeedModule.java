@@ -15,12 +15,12 @@ public class SpeedModule extends ItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Speed Upgrade";
+        return "§d路由器模组: §6速度升级模块";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Insert into an Item Router", "Passive module; increases router speed:", "0 modules = 1 operation / 20 ticks", "1 = 1/15, 2 = 1/10, 3 = 1/5", "Any modules over 3 are ignored." };
+        return new String[] { "放在 §6量子物品路由器 §7内使用", "用来 §6提高 §7路由器的传输速度", "每个升级模块可以减少 §610帧 §7的传输间隔", "最多可以叠加 §64个 §7升级模块" };
     }
 
     @Override

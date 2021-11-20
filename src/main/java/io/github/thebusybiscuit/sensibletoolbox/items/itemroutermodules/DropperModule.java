@@ -22,7 +22,7 @@ public class DropperModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "§d路由器模组: §d投掷器";
+        return "§d路由器模组: §b投掷器";
     }
 
     @Override

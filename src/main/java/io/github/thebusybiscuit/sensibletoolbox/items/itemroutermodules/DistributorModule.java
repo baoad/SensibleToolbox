@@ -32,7 +32,7 @@ public class DistributorModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "§d路由器模组: §d分发器";
+        return "§d路由器模组: §b分发器";
     }
 
     @Override

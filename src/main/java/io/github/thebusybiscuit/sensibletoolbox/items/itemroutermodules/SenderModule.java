@@ -29,12 +29,12 @@ public class SenderModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Sender";
+        return "§d路由器模组: §d传送器";
     }
 
     @Override
     public String[] getLore() {
-        return makeDirectionalLore("Insert into an Item Router", "Sends items elsewhere:", " - An adjacent inventory OR", " - Item Router with Receiver Module:", "   within 10 blocks, with line of sight");
+        return makeDirectionalLore("放在 §6量子物品路由器 §7内使用", "用来传送 §6缓冲区 §7内的物品到 §6相邻 §7的容器内", "或者直线 §610格 §7内装载了 §6接收器 §7模块的路由器内", "", "左键方块: §6设置方向", "蹲下 + 左键空气: 删除方向");
     }
 
     @Override

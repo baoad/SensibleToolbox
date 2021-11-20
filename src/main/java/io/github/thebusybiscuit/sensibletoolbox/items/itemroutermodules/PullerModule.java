@@ -16,7 +16,7 @@ public class PullerModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "§d路由器模组: §d吸引器";
+        return "§d路由器模组: §b吸引器";
     }
 
     @Override

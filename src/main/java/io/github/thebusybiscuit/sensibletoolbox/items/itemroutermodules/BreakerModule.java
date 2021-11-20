@@ -77,12 +77,12 @@ public class BreakerModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Breaker";
+        return "§d路由器模组: §b方块破碎器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Insert into an Item Router", "Breaks the block in its", "configured direction and", "pulls it into the item router" };
+        return new String[] { "需要放在 §6量子物品路由器 §7内使用", "可以按照设定的方向 §6打碎 §7相邻的方块", "打碎的物品将会放入 §6缓冲区 §7内" };
     }
 
     @Override

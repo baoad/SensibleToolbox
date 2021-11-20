@@ -15,12 +15,12 @@ public class StackModule extends ItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Stack Upgrade";
+        return "§d路由器模组: §6容量升级模块";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Insert into an Item Router", "Passive module; each stack module", "doubles the number of items moved", "per operation, up to the item's max", "stack size.", "Any modules over 6 are ignored.", };
+        return new String[] { "放在 §6量子物品路由器 §7内使用", "每个 §6容量升级模块 §7都可以使得", "每次运行时处理的 §6物品数量 §7翻倍", "最多可以堆叠 §66个 §7容量升级模块" };
     }
 
     @Override

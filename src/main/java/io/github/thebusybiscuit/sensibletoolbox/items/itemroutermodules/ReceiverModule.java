@@ -21,7 +21,7 @@ public class ReceiverModule extends ItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "§d路由器模组: §d接收器";
+        return "§d路由器模组: §b接收器";
     }
 
     @Override

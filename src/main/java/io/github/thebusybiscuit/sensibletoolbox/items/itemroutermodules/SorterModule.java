@@ -30,12 +30,12 @@ public class SorterModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Sorter";
+        return "§d路由器模组: §b";
     }
 
     @Override
     public String[] getLore() {
-        return makeDirectionalLore("Insert into an Item Router", "Places items into inventory IF", "- inventory is empty OR", "- inventory already contains that item");
+        return makeDirectionalLore("放在 §6量子物品路由器 §7内使用", "可以自动传输 §6符合条件 §7的物品", "工作条件: 对应的容器是 §6空 §7的或者 §6包含 §7要传输的物品", "", "左键方块: §6设置方向", "蹲下 + 左键空气: 删除方向");
     }
 
     @Override

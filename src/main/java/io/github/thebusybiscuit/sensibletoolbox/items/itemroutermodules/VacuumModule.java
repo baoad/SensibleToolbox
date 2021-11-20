@@ -8,10 +8,7 @@ import java.util.UUID;
 
 import javax.annotation.Nonnull;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Entity;
@@ -45,12 +42,12 @@ public class VacuumModule extends DirectionalItemRouterModule {
 
     @Override
     public String getItemName() {
-        return "I.R. Mod: Vacuum";
+        return "§d路由器模组: §b吸取器";
     }
 
     @Override
     public String[] getLore() {
-        return new String[] { "Insert into an Item Router", "Sucks up items within a " + RADIUS + "-block radius" };
+        return new String[] { "放在 §6量子物品路由器 §7内使用", "用于吸取半径为 "+ ChatColor.GOLD + RADIUS + " §7格内的物品", "吸取的物品会放入 §6缓冲区 §7内" };
     }
 
     @Override

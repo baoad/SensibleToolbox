@@ -27,7 +27,7 @@ public class HyperSenderModule extends AdvancedSenderModule {
 
     @Override
     public String getItemName() {
-        return "§d路由器模组: §d超级传送器:";
+        return "§d路由器模组: §b超级传送器:";
     }
 
     @Override

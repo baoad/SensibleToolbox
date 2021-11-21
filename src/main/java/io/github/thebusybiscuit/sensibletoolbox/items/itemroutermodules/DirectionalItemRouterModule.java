@@ -104,9 +104,9 @@ public abstract class DirectionalItemRouterModule extends ItemRouterModule imple
             return new String[0];
         } else {
             String[] lore = new String[(filter.size() + 1) / 2 + 2];
-            String what = filter.isWhiteList() ? "white-listed" : "black-listed";
+            String what = filter.isWhiteList() ? "白名单" : "黑名单";
             String s = filter.size() == 1 ? "" : "s";
-            lore[0] = ChatColor.GOLD.toString() + filter.size() + " 个物品" + s + " " + what;
+            lore[0] = ChatColor.GOLD.toString() + filter.size() + " 个物品在 " + what;
 
             if (isTerminator()) {
                 lore[0] += ", " + ChatColor.BOLD + "Terminating";
@@ -221,8 +221,8 @@ public abstract class DirectionalItemRouterModule extends ItemRouterModule imple
 
     protected String[] makeDirectionalLore(String... lore) {
         String[] newLore = Arrays.copyOf(lore, lore.length + 2);
-        newLore[lore.length] = "L-click Block: " + ChatColor.WHITE + " Set direction";
-        newLore[lore.length + 1] = UnicodeSymbol.ARROW_UP.toUnicode() + " + L-click Air: " + ChatColor.WHITE + " Unset direction";
+        newLore[lore.length] = "左键方块:" + ChatColor.GOLD + " 设置方向";
+        newLore[lore.length + 1] = "蹲下 + 左键空气:" + ChatColor.GOLD + " 删除方向";
         return newLore;
     }
 

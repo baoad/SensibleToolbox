@@ -106,7 +106,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
 
     @Override
     public String getItemName() {
-        return "Multibuilder";
+        return  ChatColor.GOLD +"建筑魔杖";
     }
 
     @Override
